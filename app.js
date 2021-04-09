@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000; //
 const cool = require('cool-ascii-faces');
 
 express()
+    .get('/', (req, res) => res.send('Hello there! We are successfully up & running.'))
     // .use(express.static(path.join(__dirname, 'public')))
     // .set('views', path.join(__dirname, 'views'))
     // .set('view engine', 'ejs')
